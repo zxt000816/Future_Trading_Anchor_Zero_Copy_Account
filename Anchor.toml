@@ -1,0 +1,15 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+future_trading_anchor_zero_copy_account = "C4TTjWcjNv7XcjMPzSTRQaDw5Ka4moCooHS1d1dPjhRn"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "./zero_copy_account.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
